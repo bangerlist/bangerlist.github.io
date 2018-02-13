@@ -1,0 +1,125 @@
+/* BIG GRADIENTS */
+.blue-1-grad {
+  background: #0098F7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #0098F7, #01EDED); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0098F7, #01EDED); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #0098F7, #01EDED); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #0098F7, #01EDED); /* Standard syntax */
+}
+
+.lightgreen-1-grad {
+  background: #45D3CD; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #45D3CD, #1CE178); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #45D3CD, #1CE178); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #45D3CD, #1CE178); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #45D3CD, #1CE178); /* Standard syntax */
+}
+
+.orangepurpleblue-2-grad {
+  background: #CC7EC6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #FEAC5E, #CC7EC6, #4CBFC8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #FEAC5E, #CC7EC6, #4CBFC8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #FEAC5E, #CC7EC6, #4CBFC8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #FEAC5E, #CC7EC6, #4CBFC8); /* Standard syntax */
+}
+
+.greenpurple-1-grad {
+  background: #72E8D2; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #72E8D2, #ACB6E5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #72E8D2, #ACB6E5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #72E8D2, #ACB6E5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #72E8D2, #ACB6E5); /* Standard syntax */
+}
+
+.darkblue-1-grad {
+  background: #457fca; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #457fca, #5691c8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #457fca, #5691c8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #457fca, #5691c8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #457fca, #5691c8); /* Standard syntax */
+}
+
+.lightpurple-1-grad {
+  background: #B24592; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #B24592, #F15F79); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #B24592, #F15F79); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #B24592, #F15F79); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #B24592, #F15F79); /* Standard syntax */
+}
+
+.orange-1-grad {
+  background: #FFC271; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #FFC271, #FE606E); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #FFC271, #FE606E); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #FFC271, #FE606E); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #FFC271, #FE606E); /* Standard syntax */
+}
+
+.purple-1-grad {
+  background: #F857A6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #F857A6, #FF5858); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #F857A6, #FF5858); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #F857A6, #FF5858); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #F857A6, #FF5858); /* Standard syntax */
+}
+
+.lightblue-1-grad {
+  background: #00CCF8; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #00CCF8, #3A7BD5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #00CCF8, #3A7BD5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #00CCF8, #3A7BD5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #00CCF8, #3A7BD5); /* Standard syntax */
+}
+
+.orangepurpleblue-1-grad {
+  background: #CC7EC6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #FEAC5E, #CC7EC6, #4CBFC8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #FEAC5E, #CC7EC6, #4CBFC8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #FEAC5E, #CC7EC6, #4CBFC8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #FEAC5E, #CC7EC6, #4CBFC8); /* Standard syntax */
+}
+
+.bluepurple-1-grad {
+  background: #32B4EB; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #32B4EB, #CE1DEF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #32B4EB, #CE1DEF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #32B4EB, #CE1DEF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #32B4EB, #CE1DEF); /* Standard syntax */
+}
+
+.yelloworange-1-grad {
+  background: #F48837; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #F48837, #FEC33C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #F48837, #FEC33C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #F48837, #FEC33C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #F48837, #FEC33C); /* Standard syntax */
+}
+
+.red-1-grad {
+  background: #F48837; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #e52d27, #b31217); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #e52d27, #b31217); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #e52d27, #b31217); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #e52d27, #b31217); /* Standard syntax */
+}
+
+.darkgreen-1-grad {
+  background: #0ba360; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #0ba360, #3cba92); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0ba360, #3cba92); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #0ba360, #3cba92); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #0ba360, #3cba92); /* Standard syntax */
+}
+
+
+.modal-body {
+  color: #707070;
+}
+
+
+/*NAV BAR*/
+.navbar .navbar-brand img {
+    /*max-width: 20px;*/
+    max-width: 160px;
+    max-height: 40px;
+}

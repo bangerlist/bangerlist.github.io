@@ -1,0 +1,98 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include /meta/main.html %}
+{% include /meta/og.html %}
+{% include /meta/favicon.html %}
+{% include /meta/verification.html %}
+
+{% include /css/main.html %}
+{% include /scripts/internet-explorer.html %}
+
+{% include /scripts/ad-libraries.html %}
+
+</head>
+<body>
+<div class="content-wrapper">
+  {% include /elements/nav.html %}
+  <!--/.navbar -->
+  <div class="rev_slider_wrapper fullwidth-container">
+    <div id="slider-medium" class="rev_slider darkblue-1-grad" data-version="5.4.1">
+      <ul>
+        <li data-transition="fade" data-nav-color="light"><img src="/assets/images/dummy.png" data-bgcolor="" alt="" />
+
+              <div class="tp-caption w-regular color-white text-center"
+    	        data-x="center"
+        			data-y="middle"
+        			data-voffset="['-70','-70','-80','-70']"
+        			data-fontsize="['50','50','50','36']"
+        			data-lineheight="['60','60','60','46']"
+        			data-width="['1100','980','700','450']"
+        			data-textAlign="['center','center','center','center']"
+        			data-whitespace="['normal','normal','normal','normal']"
+        			data-frames='[{"from":"x:-50px;opacity:0;","speed":200,"to":"o:1;","delay":200,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+        			data-responsive="on"
+        			data-responsive_offset="on"
+        			style="z-index: 9;">{{ page.header }}</div>
+              <div class="tp-caption w-light color-white text-center"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['0','0','0','0']"
+              data-fontsize="['28','28','28','22']"
+              data-lineheight="['38','38','38','32']"
+              data-width="['750','750','650','450']"
+              data-textAlign="['center','center','center','center']"
+              data-whitespace="['normal','normal','normal','normal']"
+              data-frames='[{"from":"x:50px;opacity:0;","speed":400,"to":"o:1;","delay":400,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;">{{ page.subheader }}</div>
+              <a class="tp-caption btn btn-border btn-rounded btn-l btn-white"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['75','75','95','95']"
+              data-width="['auto','auto','auto','auto']"
+              data-textAlign="['center','center','center','center']"
+              data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;" href="{{site.url}}/download{{site.trailing}}">Get Somiibo</a> </li>
+
+            </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+    <!-- /.rev_slider -->
+  </div>
+  <!-- /.rev_slider_wrapper -->
+
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      {{ content }}
+    </div>
+    <!-- /.container -->
+  </div>
+
+
+
+  <!-- /#about -->
+
+
+
+  {% include /elements/breadcrumbs.html %}
+</div>
+
+  {% include /elements/foot.html %}
+
+  {% include /elements/sitelinks.html %}
+  {% include /scripts/main.html %}
+
+  {% include /scripts/firebase.html %}
+  {% include /scripts/tracking.html %}
+</body>
+</html>

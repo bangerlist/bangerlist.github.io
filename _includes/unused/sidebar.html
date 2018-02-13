@@ -1,0 +1,101 @@
+<div class="tt-sidebar-wrapper" role="complementary">
+  <div class="widget widget_search">
+    <!-- <form role="search" method="get" class="search-form">
+      <input type="text" class="form-control" value="" name="s" id="s" placeholder="Write any keywords">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
+    <form action="https://www.google.com" id="cse-search-box" target="_blank" class="search-form">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-7372939085773564:8604256015" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" size="55" class="form-control" placeholder="Search the blog"/>
+        <button type="submit"><i class="fa fa-search"></i></button>
+
+      </div>
+    </form>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
+    <script type="text/javascript" src="https://www.google.com/cse/t13n?form=cse-search-box&t13n_langs=en"></script>
+
+    <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+  </div>
+
+
+  <div class="widget widget_tt_popular_post">
+    <div class="tt-popular-post border-bottom-tab">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs hidden-xs">
+            <li class="active">
+                <a href="#tt-popular-post-tab1" data-toggle="tab" aria-expanded="true">Latest</a>
+            </li>
+            <li class="">
+                <a href="#tt-popular-post-tab2" data-toggle="tab" aria-expanded="false">Team</a>
+            </li>
+        </ul><div class="panel-group visible-xs" id="undefined-accordion"></div>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- latest post tab -->
+
+            <div id="tt-popular-post-tab1" class="tab-pane fade active in">
+              {% for post in site.posts limit:5 %}
+              {% assign author = site.authors | where: 'title', post.author | first %}
+              <div class="media">
+                <a class="media-left" href="{{ author.url }}">
+                  <img src="/blog/authors/{{ author.author_id }}/profile.jpg" alt="">
+                </a>
+
+                <div class="media-body">
+                  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+              {% endfor %}
+
+            </div>
+
+            <!-- popular post tab-->
+            <div id="tt-popular-post-tab2" class="tab-pane fade">
+              {% for author in site.authors limit:5 %}
+              <div class="media">
+                <a class="media-left" href="{{ author.url }}">
+                  <img src="/blog/authors/{{ author.author_id }}/profile.jpg" alt="">
+                </a>
+
+                <div class="media-body">
+                  <h4><a href="{{ author.url }}">{{ author.title }}</a></h4>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+              {% endfor %}
+            </div>
+        </div><!-- /.tab-content -->
+    </div><!-- /.tt-popular-post -->
+  </div><!-- /.widget_tt_popular_post -->
+
+  <div class="widget widget_categories">
+    <h3 class="widget-title">Sponsored</h3>
+    {% include /adunits/blog-sidebar.html %}
+  </div><!-- /.widget_categories -->
+
+  <div class="widget widget_categories">
+    <h3 class="widget-title">Popular Tags</h3>
+    <!-- <ul>
+      <li><a href="/blog/tags#marketing">Marketing</a></li>
+      <li><a href="/blog/tags#Social-Engagement">Social Engagement</a></li>
+      <li><a href="/blog/tags#Social-Presence">Social Presence</a></li>
+    </ul> -->
+    {% include sidebar-tagcloud.html %}
+    <p><a href="/blog/tags/">view all</a></p>
+
+  </div><!-- /.widget_categories -->
+
+  <div class="widget widget_categories">
+
+  <a class="twitter-timeline" href="https://twitter.com/somiibo" data-tweet-limit="2">Tweets by Somiibo</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </div>
+
+</div>

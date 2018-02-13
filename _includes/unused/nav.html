@@ -1,0 +1,80 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="flex-it">
+      <div class="navbar-header">
+        <!-- <div class="navbar-brand"><a href="index.html"><img src="/" srcset="/assets/images/logo.png 1x, /assets/images/logo@2x.png 2x" alt="" /></a></div> -->
+        <div class="navbar-brand"><a href="{{site.url}}"><img src="/assets/images/dummy.png" srcset="/assets/images/somiibo-logo-bar.svg 1x, /assets/images/somiibo-logo-bar.svg 2x" alt="Somiibo brand logo" /></a></div>
+        <div class="nav-bars-wrapper">
+          <div class="nav-bars-inner">
+            <div class="nav-bars" data-toggle="collapse" data-target=".navbar-collapse"><span></span></div>
+          </div>
+          <!-- /.nav-bars-inner -->
+        </div>
+        <!-- /.nav-bars-wrapper -->
+        <!-- <div class="navbar-other"> -->
+
+        <!-- </div> -->
+        <!-- /.navbar-other -->
+      </div>
+      <!-- /.nav-header -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="mega-menu"><a href="{{site.url}}">HOME </a></li>
+          <li class="mega-menu"><a href="{{site.url}}/download">DOWNLOAD </a></li>
+          <li><a href="#">PLATFORMS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{site.url}}/platforms">VIEW ALL </a></li>
+              <li><a href="{{site.url}}/platforms/soundcloud-bot">SOUNDCLOUD BOT </a></li>
+              <li><a href="{{site.url}}/platforms/instagram-bot">INSTAGRAM BOT </a></li>
+              <li><a href="{{site.url}}/platforms/twitter-bot">TWITTER BOT </a></li>
+              <li><a href="#">SOCIAL EXCHANGE BOTS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{site.url}}/platforms/addmefast-bot">ADDMEFAST BOT</a> </li>
+                  <li><a href="{{site.url}}/platforms/youlikehits-bot">YOULIKEHITS BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/like4like-bot">LIKE4LIKE BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/kingdomlikes-bot">KINGDOMLIKES BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/likenation-bot">LIKENATION BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/followlike-bot">FOLLOWLIKE BOT</a></li>
+                </ul>
+              </li>
+              <li><a href="#">TOOLS<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{site.url}}/platforms/proxy-browser">PROXY BROWSER </a></li>
+                  <li><a href="{{site.url}}/platforms/traffic-bot">TRAFFIC BOT </a></li>
+                  <li><a href="{{site.url}}/platforms/article-spinner">ARTICLE SPINNER </a></li>
+                  <li><a href="{{site.url}}/platforms/plagarism-checker">PLAGARISM CHECKER </a></li>
+                  <li><a href="{{site.url}}/platforms/grammar-checker">GRAMMAR CHECKER </a></li>
+                  <li><a href="{{site.url}}/platforms/domain-authority-checker">DOMAIN AUTHORITY </a></li>
+                  <li><a href="{{site.url}}/platforms/page-authority-checker">PAGE AUTHORITY </a></li>
+                </ul>
+              </li>
+            </ul>
+            <!--/.dropdown-menu -->
+          </li>
+          <li class="mega-menu"><a href="{{site.url}}/blog">BLOG </a></li>
+          <li class="mega-menu"><a href="{{site.url}}/support">SUPPORT </a></li>
+          <li id="btn-login" class="mega-menu"><a href="{{site.url}}/signin">SIGNIN </a></li>
+          <li id="btn-profile"><a href="#">PROFILE <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{site.url}}/profile">PROFILE </a></li>
+              <li><a href="#" onclick="firebase.auth().signOut();">LOGOUT </a></li>
+            </ul>
+            <!--/.dropdown-menu -->
+          </li>
+        </ul>
+        <!--/.navbar-nav -->
+      </div>
+      <!--/.nav-collapse -->
+      <div class="navbar-other">
+        <ul class="nav">
+          <li class="pt-10">
+            <a href="{{site.url}}/signup" id="btn-signup" class="btn btn-rounded btn-aqua" role="button">SIGNUP</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-other -->
+    </div>
+    <!--/.flex-it -->
+  </div>
+  <!--/.container -->
+</nav>

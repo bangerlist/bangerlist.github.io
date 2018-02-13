@@ -1,0 +1,79 @@
+<section id="app-remove-padding" class="section-padding default-blog grid-blog">
+    <div class="container">
+
+      <div class="row">
+
+
+         <a name="post-list-top"></a>
+          <!-- <div class="row blogitems"> -->
+          <div class="text-center mb-80">
+            <img class="" src="/assets/img/custom/somiibo-present.jpg" alt="Somiibo Social Media Bot Blog Image" title="Showcasing Somiibo Social Media Automation blog" style="height: 250px">
+              <h2 class="section-title"><strong>Somiibo</strong> Automated Marketing Blog</h2>
+              <p class="section-sub">Somiibo always tries to stay up to date with the latest tips. Head over to our <a href="/blog/">marketing automation blog</a> and never get out of the loop on current social media tips!</p>
+          </div>
+          <div class="row blogitems">
+          {% for post in site.posts limit:2 %}
+            <div class="col-md-4">
+                <article class="post-wrapper">
+
+                  <div class="thumb-wrapper">
+                    <a href="{{ post.url }}">
+                      <img src="/blog/posts/{{ post.post_id }}/teaser.jpg" class="img-responsive" alt="" >
+                    </a>
+
+                    <div class="entry-header">
+
+                      <h2 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+                    {% assign author = site.authors | where: 'title', post.author | first %}
+                    </div><!-- .entry-header -->
+
+                    <div class="author-thumb waves-effect waves-light">
+                      <a href="{{ author.url }}"><img src="/blog/authors/{{ author.author_id }}/profile.jpg" alt=""></a>
+                    </div>
+
+
+                    <span class="post-comments-number">
+
+                    </span>
+
+                  </div><!-- .post-thumb -->
+
+
+                  <div class="entry-content">
+
+                    <!-- <p>By Author</p> -->
+                    <div class="grid-news-hover">
+                      <div class="entry-meta">
+                          <ul class="grid-news-hover">
+                              <li>
+                                  By <a href="{{ author.url }}">{{ author.title }}</a>
+                              </li>
+                          </ul>
+                      </div><!-- .entry-meta -->
+                    </div>
+
+                    <p>{{ post.excerpt }}</p>
+                    <p><a href="{{ post.url }}" class="btn zoombtn">Read More</a></p>
+                  </div><!-- .entry-content -->
+
+                </article><!-- /.post-wrapper -->
+
+            </div><!-- /.col-md-6 -->
+            {% endfor %}
+            <div class="col-md-4">
+                {% include /adunits/inner-adsense-infeed.html %}
+            </div><!-- /.col-md-6 -->
+          </div>
+
+
+
+            {% include /adunits/inner-facebook-banner-2.html %}
+
+
+        </div>
+
+      </div>
+
+    </div><!-- /.container -->
+</section>

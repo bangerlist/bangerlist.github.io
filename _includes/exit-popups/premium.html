@@ -1,0 +1,46 @@
+<script>
+/* Initialize DD Exit Pop Up Script:*/
+jQuery(function(){
+	ddexitpop.init({
+		contentsource: ['id', 'plays-1000'],
+		fxclass: 'random',
+		displayfreq: 'always',
+		onddexitpop: function($popup){
+			console.log('Exit Pop Animation Class Name: ' + ddexitpop.settings.fxclass)
+		}
+	})
+})
+</script>
+  
+<!--   <div id="ddexitpop1" class="ddexitpop">
+    <h1>Hold On For Just One Second!</h1>
+    <p>Before you leave, download our FREE e-book that shows you how to create a blog, step by step, in under 20 minutes!</p>
+    <p>You'll learn:</p>
+    <ul>
+    <li>Pick a Web Host</li>
+    <li>How to select the best CMS</li>
+    <li>Install and Choose a Theme</li>
+    <li>Promote and Set Up Social Profiles for your Blog</li>
+    </ul>
+    <a class="calltoaction" href="#" onClick="ddexitpop.hidepopup()">Download Free E-Book</a>
+  </div> -->
+
+
+  <!-- Modal -->
+  <div class="ddexitpop modal fade" id="plays-1000" tabindex="-1" role="dialog" aria-labelledby="plays-1000">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content bg-white">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Buy 1,000 SoundCloud Plays</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://www.powr.io/plugins/form-builder/view?unique_label=f8caa813_1511597081&external_type=iframe" width="100%" height="270" frameborder="0"></iframe>
+          <p>Purchases are subject to our <a href="{{site.url}}/tos{{site.trailing}}">terms of service</a> </p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  </div>

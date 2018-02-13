@@ -1,0 +1,76 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="flex-it">
+      <div class="navbar-header">
+        <div class="navbar-brand"><a href="{{site.url}}"><img src="/assets/images/dummy.png" srcset="/assets/images/somiibo-logo-bar.svg 1x, /assets/images/somiibo-logo-bar.svg 2x" alt="Somiibo brand logo" /></a></div>
+        <div class="nav-bars-wrapper">
+          <div class="nav-bars-inner">
+            <div class="nav-bars" data-toggle="collapse" data-target=".navbar-collapse"><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="mega-menu {% if page.url contains '/download/' %} active {% endif %}" ><a href="{{site.url}}/download{{site.trailing}}">DOWNLOAD </a></li>
+          <li class="{% if page.url contains '/platforms/' %} active {% endif %}"> <a href="{{site.url}}/platforms{{site.trailing}}">PLATFORMS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{site.url}}/platforms{{site.trailing}}">VIEW ALL </a></li>
+              <li><a href="{{site.url}}/platforms/soundcloud-bot{{site.trailing}}">SOUNDCLOUD BOT </a></li>
+              <li><a href="{{site.url}}/platforms/instagram-bot{{site.trailing}}">INSTAGRAM BOT </a></li>
+              <li><a href="{{site.url}}/platforms/twitter-bot{{site.trailing}}">TWITTER BOT </a></li>
+              <li><a href="#">SOCIAL EXCHANGE BOTS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{site.url}}/platforms/addmefast-bot{{site.trailing}}">ADDMEFAST BOT</a> </li>
+                  <li><a href="{{site.url}}/platforms/youlikehits-bot{{site.trailing}}">YOULIKEHITS BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/like4like-bot{{site.trailing}}">LIKE4LIKE BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/kingdomlikes-bot{{site.trailing}}">KINGDOMLIKES BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/likenation-bot{{site.trailing}}">LIKENATION BOT</a></li>
+                  <li><a href="{{site.url}}/platforms/followlike-bot{{site.trailing}}">FOLLOWLIKE BOT</a></li>
+                </ul>
+              </li>
+              <li><a href="#">TOOLS<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{site.url}}/platforms/proxy-browser{{site.trailing}}">PROXY BROWSER </a></li>
+                  <li><a href="{{site.url}}/platforms/traffic-bot{{site.trailing}}">TRAFFIC BOT </a></li>
+                  <li><a href="{{site.url}}/platforms/article-spinner{{site.trailing}}">ARTICLE SPINNER </a></li>
+                  <li><a href="{{site.url}}/platforms/plagarism-checker{{site.trailing}}">PLAGARISM CHECKER </a></li>
+                  <li><a href="{{site.url}}/platforms/grammar-checker{{site.trailing}}">GRAMMAR CHECKER </a></li>
+                  <li><a href="{{site.url}}/platforms/domain-authority-checker{{site.trailing}}">DOMAIN AUTHORITY </a></li>
+                  <li><a href="{{site.url}}/platforms/page-authority-checker{{site.trailing}}">PAGE AUTHORITY </a></li>
+                </ul>
+              </li>
+              <li><a href="https://dev.somiibo.com">MAKE A CUSTOM BOT </a></li>
+
+            </ul>
+          </li>
+          <li class="{% if page.url contains '/packages/' %} active {% endif %}"> <a href="{{site.url}}/packages{{site.trailing}}">PACKAGES <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- <li><a href="{{site.url}}/services{{site.trailing}}">VIEW ALL </a></li> -->
+              <li><a href="{{site.url}}/packages/premium{{site.trailing}}">SOMIIBO PREMIUM </a></li>
+              <li><a href="{{site.url}}/packages/soundcloud-repost{{site.trailing}}">SOUNDCLOUD REPOST </a></li>
+              <li><a href="{{site.url}}/packages/soundcloud-plays{{site.trailing}}">SOUNDCLOUD PLAYS </a></li>
+              <li><a href="{{site.url}}/packages/promotion{{site.trailing}}">PROMOTION </a></li>
+            </ul>
+          </li>
+          <li class="mega-menu {% if page.url contains '/blog/' %} active {% endif %}"><a href="{{site.url}}/blog{{site.trailing}}">BLOG </a></li>
+          <!-- <li class="mega-menu {% if page.url contains '/support/' %} active {% endif %}"><a href="{{site.url}}/support{{site.trailing}}">SUPPORT </a></li> -->
+          <li id="btn-login" class="mega-menu btn-login" hidden><a href="{{site.url}}/signin{{site.trailing}}">SIGN IN </a></li>
+          <li id="btn-profile" class="btn-profile" hidden><a href="#" id="btn-profile-name" class="btn-profile-name"> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{site.url}}/profile{{site.trailing}}">PROFILE </a></li>
+              <li><a href="https://forum.somiibo.com">FORUM </a></li>
+              <li><a href="#" onclick="firebase.auth().signOut();">LOGOUT </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-other btn-signup-block" id="btn-signup-block">
+        <ul class="nav">
+          <li class="pt-10" id="btn-signup" class="btn-signup">
+            <a href="{{site.url}}/signup{{site.trailing}}"  class="btn btn-rounded btn-blue" role="button">SIGNUP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

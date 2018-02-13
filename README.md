@@ -1,1 +1,0 @@
-# bangerlist.github.io

@@ -1,0 +1,56 @@
+{% capture tags %}
+  {% for tag in site.tags limit:10%}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+
+{% assign sortedtags = tags | split:' ' | sort %}
+
+<style>
+    .k-tagcloud{
+    padding: 1px 9px;
+    margin: 9px 1px;
+    line-height: 40px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: .6s;
+    display: inline-block;
+    color: #363636;
+}
+.k-tagcloud:hover{
+    transition: .6s;
+    opacity: 1;
+    background: #fafafa;
+}
+</style>
+<div class="k-posts-list"></div>
+{% if site.data.site.uiux.meng == true %}
+  {% if site.data.meng.background.switch == true %}
+    <div class="mdui-card">
+  {% else %}
+    <div class="">
+  {% endif %}
+{% else %}
+<div class="">
+{% endif %}
+<div class="mdui-card-content">
+
+{% for tag in sortedtags %}
+  {% assign index = site.tags[tag] | size %}
+  {% assign fontsize = 14 %}
+  {% assign color = 125 %}
+  {% for i in (1..index) %}
+  {% capture fontsize %}{{fontsize | plus:1.5}}{% endcapture %}
+  {% endfor %}
+  {% for i in (1..index) %}
+  {% capture color %}{{ color | minus :15}}{% endcapture %}
+  {% endfor %}
+      <a id="{{ tag }}" class="k-tagcloud mdui-ripple mdui-hoverable" style="font-size:{{fontsize}}px;color:rgb({{color}},{{color}},{{color}})">{{ tag }}</a>
+{% endfor %}
+</div>
+<div class="mdui-row">
+  <div class="mdui-col-sm-12">
+    <div id="taglist"></div>
+  </div>
+</div>
+</div>

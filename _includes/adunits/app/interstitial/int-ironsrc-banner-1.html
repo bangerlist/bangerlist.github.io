@@ -1,0 +1,30 @@
+<script src="https://static.ultra-rv.com/rv-min.js"></script>
+<script type="text/javascript">
+ var params = {
+  applicationKey		: "69a2d575",
+  applicationUserId	: "1234"
+ };
+ ironRV = IronRV.getInstance(params);
+ ironRV.addListener(IronRV.EVENTS.READY, function() {
+  console.log("Ready");
+ });
+ ironRV.addListener(IronRV.EVENTS.OPEN, function() {
+  console.log("Opened");
+ });
+
+ ironRV.addListener(IronRV.EVENTS.CLOSE, function() {
+  console.log("Closed");
+ });
+ ironRV.addListener(IronRV.EVENTS.NO_CAMPAIGNS, function() {
+  console.log("No Campaigns");
+ });
+
+ ironRV.addListener(IronRV.EVENTS.COMPLETION, function() {
+  console.log("Completion");
+ });
+
+ function showRV() {
+  ironRV.show();
+ }
+</script>
+<button onClick="showRV()">ShowRV</button>

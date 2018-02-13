@@ -1,0 +1,85 @@
+<aside class="col-sm-4 sidebar">
+  <div class="sidebox widget">
+    <h5 class="widget-title">Search</h5>
+    <!-- <form class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search something">
+      </div>
+    </form> -->
+    <form action="https://www.google.com" id="cse-search-box" target="_blank" class="search-form">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-7372939085773564:8604256015" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" name="q" size="55" class="form-control" placeholder="Search the blog"/>
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+      </div>
+    </form>
+    <!-- /.search-form -->
+  </div>
+  <!-- /.widget -->
+
+  <div class="sidebox widget">
+    <h5 class="widget-title">About Somiibo</h5>
+    <p>Somiibo is automation made simple for a range of actions on social media platforms. It’s a fact that profiles with more activity get more attention – let Somiibo help you engage the world.</p>
+    <ul class="social social-color social-s" itemscope itemtype="http://schema.org/Organization">
+      <link itemprop="url" href="https://somiibo.com">
+      <li><a itemprop="sameAs" href="https://twitter.com/somiibo" rel="nofollow"><span class="et-twitter"></span></a></li>
+      <li><a itemprop="sameAs" href="https://www.facebook.com/somiibo/" rel="nofollow"><span class="et-facebook"></span></a></li>
+      <li><a itemprop="sameAs" href="https://www.instagram.com/somiibo/" rel="nofollow"><span class="et-instagram"></span></a></li>
+      <li><a itemprop="sameAs" href="https://www.pinterest.com/somiibo/" rel="nofollow"><span class="et-pinterest"></span></a></li>
+      <li><a itemprop="sameAs" href="https://somiibo.tumblr.com/" rel="nofollow"><span class="et-tumblr"></span></a></li>
+      <li><a itemprop="sameAs" href="https://plus.google.com/107387690608893214626" rel="nofollow"><span class="et-google"></span></a></li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <!-- /.widget -->
+
+  <div class="sidebox widget">
+    <h5 class="widget-title">Popular Posts</h5>
+    <ul class="image-list">
+      {% for post in site.posts limit:3 %}
+      {% assign author = site.authors | where: 'title', post.author | first %}
+      <li>
+        <figure class="overlay overlay1"><a href="{{ site.url }}{{ post.url }}"></a> <img src="{{ site.url }}/blog/authors/{{ author.author_id }}/profile.jpg" alt="{{ post.title }}" />
+          <figcaption><i class="et-link from-top icon-xs"></i></figcaption>
+        </figure>
+        <div class="post-content">
+          <h6 class="post-title"> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> </h6>
+          <div class="meta"><span class="date">{{ post.date | date_to_string }}</span></div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <!-- /.image-list -->
+  </div>
+  <!-- /.widget -->
+
+  <div class="sidebox widget">
+    <h5 class="widget-title">Sponsored</h5>
+    {% include /adunits/blog-sidebar.html %}
+  </div>
+
+  <div class="sidebox widget">
+    <h5 class="widget-title">Categories</h5>
+    <ul class="unordered-list">
+      <li><a href="{{ site.url }}/blog/best-soundcloud-bot{{site.trailing}}">SoundCloud</a></li>
+      <li><a href="{{ site.url }}/blog/connect-to-multiple-proxies{{site.trailing}}">Proxy Browser</a></li>
+      <li><a href="{{ site.url }}/blog/best-instagram-bot{{site.trailing}}">Instagram</a></li>
+      <li><a href="{{ site.url }}/blog/best-youlikehits-bot{{site.trailing}}">YouLikeHits</a></li>
+      <li><a href="{{ site.url }}/blog/best-addmefast-bot{{site.trailing}}">AddMeFast</a></li>
+    </ul>
+  </div>
+  <!-- /.widget -->
+
+  <div class="sidebox widget">
+    <h5 class="widget-title">Tags</h5>
+    <ul class="unordered-list">
+      <li><a href="{{ site.url }}/blog/social-proof-in-social-media{{site.trailing}}">Social Proof</a></li>
+      <li><a href="{{ site.url }}/blog/good-content-makes-marketing-easy{{site.trailing}}">Marketing</a></li>
+    </ul>
+  </div>
+  <!-- /.widget -->
+
+  <!-- /.widget -->
+
+</aside>

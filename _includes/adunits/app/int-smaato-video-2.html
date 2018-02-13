@@ -1,0 +1,17 @@
+<div id="smt-130348502" style="padding: 0px"></div>
+<script type="text/javascript" src="https://soma-assets.smaato.net/js/smaatoAdTag.js"></script>
+<script>
+	function callBackForSmaato(status){
+		if(status == "SUCCESS"){
+			console.log("callBack is being called with status : " + status);
+		} else if (status == "ERROR"){
+			console.log("callBack is being called with status : " + status);
+		}
+	};
+	SomaJS.loadAd({
+		adDivId : "smt-130348502",
+		publisherId: 1100034902,
+		adSpaceId: 130348502,
+		format: "video",formatstrict: true,dimension: "full_768x1024",width: 768,height: 1024,
+	sync: false,},callBackForSmaato);
+</script>

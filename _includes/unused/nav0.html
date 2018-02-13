@@ -1,0 +1,96 @@
+<!--header start-->
+<header id="header" class="tt-nav nav-border-bottom">
+<!-- <header id="header" class="tt-nav transparent-header nav-border-bottom"> -->
+
+    <div class="header-sticky light-header">
+
+        <div class="container">
+          <!-- <div class="search-wrapper">
+                        <div class="search-trigger pull-right">
+                            <div class="search-btn"></div>
+                            <i class="material-icons"></i>
+                        </div> -->
+
+                        <!-- Modal Search Form -->
+                        <!-- <i class="search-close material-icons"></i>
+                        <div class="search-form-wrapper">
+                            <form action="#" class="white-form">
+                                <div class="input-field">
+                                    <input type="text" name="search" id="search">
+                                    <label for="search" class="">Search Here...</label>
+
+                                </div>
+                                <button class="btn pink search-button waves-effect waves-light" type="submit"><i class="material-icons"></i></button>
+                            </form>
+                        </div>
+                    </div> -->
+
+            <div id="materialize-menu" class="menuzord">
+              <!--logo start-->
+              <a href="/" class="logo-brand">
+                  <img class="logo-dark" src="/assets/img/somiibo-logo-bar-small.png" alt="" />
+                  <!-- <img class="logo-light" src="/assets/img/somiibo-logo-natural.png" alt="" /> -->
+              </a>
+              <!--logo end-->
+
+              <!-- menu start-->
+              <ul id="navbar-load" class="menuzord-menu pull-right">
+
+                <li {% if page.url == "/" %} class="active" {% endif %}><a href="/">HOME</a>
+                </li>
+                <li {% if page.url contains '/download/' %} class="active" {% endif %}><a href="/download/">DOWNLOAD</a>
+                </li>
+                <li {% if page.url contains '/platforms/' %} class="active" {% endif %}><a href="javascript:void(0)">PLATFORMS</a>
+                    <ul class="dropdown">
+                        <li><a href="/platforms/">VIEW ALL </a>
+                        </li>
+                        <li><a href="/platforms/soundcloud-bot/">SOUNDCLOUD BOT</span></a>
+                        </li>
+                        <li><a href="/platforms/instagram-bot/">INSTAGRAM BOT</span></a>
+                        </li>
+                        <li><a href="/platforms/twitter-bot/">TWITTER BOT</a>
+                        </li>
+                        <li><a href="#">SOCIAL EXCHANGE BOTS</a>
+                          <ul class="dropdown">
+                            <!-- <li><a href="/platforms/addmefast-bot/">ADDMEFAST BOT </a> <span class="label orange-1-grad mt-10 padding-left-10 pull-right"> Beta</span></li> -->
+                            <li><a href="/platforms/addmefast-bot/">ADDMEFAST BOT</a> </li>
+                            <li><a href="/platforms/youlikehits-bot/">YOULIKEHITS BOT</a></li>
+                            <li><a href="/platforms/like4like-bot/">LIKE4LIKE BOT</a></li>
+                            <li><a href="/platforms/kingdomlikes-bot/">KINGDOMLIKES BOT</a></li>
+                            <li><a href="/platforms/likenation-bot/">LIKENATION BOT</a></li>
+                            <li><a href="/platforms/followlike-bot/">FOLLOWLIKE BOT</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">OTHER TOOLS</a>
+                          <ul class="dropdown">
+                            <li><a href="/platforms/proxy-browser/">PROXY BROWSER </a></li>
+                            <li><a href="/platforms/traffic-bot/">TRAFFIC BOT </a></li>
+                            <li><a href="/platforms/article-spinner/">ARTICLE SPINNER </a></li>
+                            <li><a href="/platforms/plagarism-checker/">PLAGARISM CHECKER </a></li>
+                            <li><a href="/platforms/grammar-checker/">GRAMMAR CHECKER </a></li>
+                            <li><a href="/platforms/domain-authority-checker/">DOMAIN AUTHORITY </a></li>
+                            <li><a href="/platforms/page-authority-checker/">PAGE AUTHORITY </a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li {% if page.url contains '/blog/' %} class="active" {% endif %}><a href="/blog/">BLOG</a>
+                </li>
+                <li {% if page.url contains '/support/' %} class="active" {% endif %}><a href="/support/">SUPPORT</a>
+                </li>
+                <li id="btn-login"><a href="/signin/">LOGIN</a>
+                </li>
+                <a href="/signup/" id="btn-signup" class="waves-effect waves-light button-signup">SIGN UP</a>
+                <li id="btn-profile">
+                  <a href="javascript:void(0)" id="btn-profile-name" class="btn-outline-primary waves-effect text-uppercase"></a>
+                  <ul class="dropdown">
+                    <li><a href="/profile/">PROFILE</a></li>
+                    <li><a href="#" onclick="firebase.auth().signOut();">LOGOUT</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header end-->

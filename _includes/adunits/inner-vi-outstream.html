@@ -1,0 +1,30 @@
+<script>
+    (function (v,i){
+        var source = 'https://s.vi-serve.com/source.js',
+			config = {
+                /*mandatory*/
+                ChannelID: '59c4d02d28a06117d405b228',                          /*vi demand channel id. Do not edit*/
+                AdUnitType: '1',                        /*Options are from 1 - 2; 1: Outstream; 2: vi stories unit (default);*/
+                PublisherID: '430660326573252',                        /*vi Publisher ID. Do not edit*/
+                PlacementID: '',                        /*vi Placement ID. Do not edit*/
+
+                /*vi stories mandatory*/
+                IAB_Category: 'IAB3-4',                       /*IAB site content classification category. Tier 1 and tier 2 categories are supported. E.g. 'IAB8' or 'IAB8-1', see https://docs.vi.ai/integrations/list-of-iab-categories/ for list of categories.*/
+                Keywords: '',                           /*Comma separated values describing the content of the page e.g. 'cooking, grilling, pulled pork'*/
+                Language: 'en-US',                           /*Language of the content of the page, ISO Language Code, e.g. 'en-us' or 'de-de'*/
+
+                /*vi stories optional*/
+                BG_Color: '',                           /*Background color of the native video unit, HEX Values, e.g. '#faf8f8'*/
+                Text_Color: '',                         /*Text color for the video title showing in the native video unit, HEX Values, e.g. '#faf8f8'*/
+                Font: '',                               /*Font for the video title showing in the native video unit, i.e: Arial;: Helvetica;: Times New Roman;: Times Roman;: Courier New;: Courier etc; use fallback to a known font name*/
+                FontSize: '',                           /*Font size for the video title showing in the native video unit*/
+
+                /*extra*/
+                vioptional1: '',                        /*These are in here for the future; WP Plugin user MUST implement in their form*/
+                vioptional2: '',                        /*These are in here for the future; WP Plugin user MUST implement in their form*/
+                vioptional3: '',                        /*These are in here for the future; WP Plugin user MUST implement in their form*/
+            },
+            b=v.body||v.documentElement.appendChild(v.createElement('body')),scr=v.createElement('script');scr.src=source,
+            scr.async=!0,scr.onload=function(){i.vi.run(config,void 0===v.currentScript?v.scripts[v.scripts.length-1]:v.currentScript,source)},b.appendChild(scr);
+    })(document,window)
+</script>

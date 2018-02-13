@@ -1,0 +1,324 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include /meta/main.html %}
+{% include /meta/og.html %}
+{% include /meta/favicon.html %}
+{% include /meta/verification.html %}
+
+{% include /css/main.html %}
+{% include /scripts/internet-explorer.html %}
+
+{% include /scripts/ad-libraries.html %}
+
+</head>
+<body>
+<div class="content-wrapper">
+  {% include /elements/nav.html %}
+  <!--/.navbar -->
+  <div class="rev_slider_wrapper fullwidth-container">
+    <div id="slider-medium" class="rev_slider {{page.bgcolor}}" data-version="5.4.1">
+      <ul>
+        <li data-transition="fade" data-nav-color="light"><img src="/assets/images/dummy.png" data-bgcolor="" alt="" />
+
+              <div class="tp-caption w-regular color-white text-center"
+    	        data-x="center"
+        			data-y="middle"
+        			data-voffset="['-70','-70','-80','-70']"
+        			data-fontsize="['50','50','50','36']"
+        			data-lineheight="['60','60','60','46']"
+        			data-width="['1100','980','700','450']"
+        			data-textAlign="['center','center','center','center']"
+        			data-whitespace="['normal','normal','normal','normal']"
+        			data-frames='[{"from":"x:-50px;opacity:0;","speed":200,"to":"o:1;","delay":200,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+        			data-responsive="on"
+        			data-responsive_offset="on"
+        			style="z-index: 9;">{{ page.main-title }}</div>
+              <div class="tp-caption w-light color-white text-center"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['0','0','0','0']"
+              data-fontsize="['28','28','28','22']"
+              data-lineheight="['38','38','38','32']"
+              data-width="['750','750','650','450']"
+              data-textAlign="['center','center','center','center']"
+              data-whitespace="['normal','normal','normal','normal']"
+              data-frames='[{"from":"x:50px;opacity:0;","speed":400,"to":"o:1;","delay":400,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;">{{ page.main-subtitle }}</div>
+              <a class="tp-caption btn btn-border btn-rounded btn-l btn-white"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['75','75','95','95']"
+              data-width="['auto','auto','auto','auto']"
+              data-textAlign="['center','center','center','center']"
+              data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;" href="{{site.url}}/download{{site.trailing}}">Get Somiibo</a> </li>
+
+            </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+    <!-- /.rev_slider -->
+  </div>
+  <!-- /.rev_slider_wrapper -->
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title text-center">{{ page.heading-1}}</h2>
+      <p class="lead text-center">{{ page.subheading-1}}</p>
+      <div class="space30"></div>
+      <div class="blog start grid-view">
+        <div class="tiles">
+          <div class="isotope row text-center">
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-1-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-1-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-1-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-2-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-2-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-2-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-3-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-3-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-3-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+          </div>
+          <div class="isotope row text-center">
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-4-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-4-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-4-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-5-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-5-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-5-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-6-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-6-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-6-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+          </div>
+            <!--/column -->
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!--/.tiles -->
+      </div>
+      <!-- /.grid-view -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+  <!-- <div class="wrapper inverse-text" data-parallax-img="{{ site.url }}/assets/images/dummy.png" data-parallax-img-width="1920" data-parallax-img-height="1223">
+    <div class="container inner pt-150 pb-150 {{page.bgcolor}}">
+      <h1 class="heading text-center">Think unique. Be unique.</h1>
+      <h2 class="section-title text-center mb-0">Make a difference using Crea;tink.</h2>
+    </div>
+  </div> -->
+  <!--/.row -->
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-sm-12">
+          {% include /adunits/inner-adsense-platform-1.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper dark-wrapper inverse-text">
+    <div class="container inner">
+      <h2 class="section-title text-center">{{ page.module-boxes.heading }}</h2>
+      <p class="lead text-center">{{ page.module-boxes.subheading }}</p>
+      <div class="space15"></div>
+      <div class="slick-wrapper ">
+        <div class="slick" data-slick='{"slidesToShow": 3, "responsive": [{"breakpoint":1024,"settings":{"slidesToShow": 2}},{"breakpoint":768,"settings":{"slidesToShow": 1}}]}'>
+          <div class="item post mr-10 ml-10">
+            <figure class="overlay overlay1 {{page.bgcolor}}"><img src="{{site.url}}{{ page.module-boxes.box-1-img }}" alt="{{ page.module-boxes.box-1-title}}" />
+              <figcaption>
+                <p class="from-top">{{ page.module-boxes.box-1-desc}}</p>
+              </figcaption>
+            </figure>
+            <div class="post-content text-center mt-20">
+              <h3 class="post-title">{{ page.module-boxes.box-1-title}}</h3>
+              <div class="meta"><span class="category">{{ page.module-boxes.box-1-subtitle}}
+              </span></div>
+              <!-- /.meta -->
+            </div>
+            <!-- /.post-content -->
+          </div>
+
+          {% if page.module-boxes.box-2-title %}
+          <div class="item post mr-10 ml-10">
+            <figure class="overlay overlay1 {{page.bgcolor}}"><img src="{{site.url}}{{ page.module-boxes.box-2-img }}" alt="{{ page.module-boxes.box-1-title}}" />
+              <figcaption>
+                <p class="from-top">{{ page.module-boxes.box-2-desc}}</p>
+
+              </figcaption>
+            </figure>
+            <div class="post-content text-center mt-20">
+              <h3 class="post-title">{{ page.module-boxes.box-2-title}}</h3>
+              <div class="meta"><span class="category">{{ page.module-boxes.box-2-subtitle}}
+              </span></div>
+              <!-- /.meta -->
+            </div>
+            <!-- /.post-content -->
+          </div>
+          {% endif %}
+
+          <!-- /.item -->
+        </div>
+        <!--/.slick -->
+        <div class="space20"></div>
+        <div class="slick-nav-container">
+          <div class="slick-nav"></div>
+        </div>
+        <!--/.slick-nav-container -->
+      </div>
+      <!--/.slick-wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <div class="row gutter60">
+        <div class="col-md-7 col-md-push-5 text-center-sm text-center-xs">
+          <!-- <figure><img src="/assets/images/art/mockup1.png" alt=""></figure> -->
+          <figure><img src="{{ site.url }}{{ page.preview-image }}" alt="{{ page.main-title}} dashboard"></figure>
+        </div>
+        <!--/column -->
+        <div class="col-md-offset-1 col-md-4 col-md-pull-7">
+          <div class="space120 hidden-xs hidden-sm hidden-md"></div>
+          <div class="space30 visible-sm visible-md"></div>
+          <h2 class="section-title">{{ page.preview-title }}</h2>
+          <div class="space10"></div>
+          <p class="lead">{{ page.preview-body }}</p>
+        </div>
+        <!--/column -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-sm-12">
+            {% include /adunits/inner-adsense-platform-2.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrapper gray-wrapper">
+    <div class="container inner">
+      <div class="text-center">
+        <p class="lead">{{ page.call-to-action.text }}</p>
+        <a href="{{ site.url }}/download{{ site.trailing }}" class="btn btn-rounded mb-0">Get Somiibo</a> </div>
+      <!-- /.text-center -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+  <section id="about">
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">{{ page.information-section.title }}</h2>
+        <p class="lead text-center">{{ page.information-section.subtitle }}</p>
+        <div class="space30"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center">
+              <figure><img src="{{ site.url }}{{ page.information-section.image }}" alt="{{ page.main-title}} information"></figure>
+            </div>
+          </div>
+          <!-- /column -->
+          <div class="space30 hidden-xs hidden-md hidden-lg"></div>
+          <div class="col-md-6">
+            <h3>{{ page.information-section.subsubtitle }}</h3>
+            <p>{{ page.information-section.body }}</p>
+            <ul class="icon-list list-blue mr-10">
+              <li><i class="et-chevron-right mr-10"></i>{{ page.information-section.bullet-1 }}</li>
+              <li><i class="et-chevron-right mr-10"></i>{{ page.information-section.bullet-2 }}</li>
+              <li><i class="et-chevron-right mr-10"></i>{{ page.information-section.bullet-3 }}</li>
+              <li><i class="et-chevron-right mr-10"></i>{{ page.information-section.bullet-4 }}</li>
+            </ul>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+
+        <div class="space70"></div>
+
+        <!--/.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.light-wrapper -->
+
+  </section>
+  <!-- /#about -->
+
+  <div class="inverse-text {{page.bgcolor}}">
+    <div class="container inner pt-150 pb-150">
+      <h1 class="heading text-center">{{ page.driving-message.title }}</h1>
+      <h2 class="section-title text-center mb-0">{{ page.driving-message.subtitle }}</h2>
+    </div>
+    <!-- /.container -->
+  </div>
+
+  {% include /modules/latest-blog.html %}
+
+
+  {% include /elements/breadcrumbs.html %}
+</div>
+
+  {% include /elements/foot.html %}
+
+  {% include /elements/sitelinks.html %}
+  {% include /scripts/main.html %}
+
+  {% include /scripts/firebase.html %}
+  {% include /scripts/tracking.html %}
+</body>
+</html>

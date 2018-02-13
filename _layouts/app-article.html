@@ -1,0 +1,131 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include /meta/main.html %}
+{% include /meta/og.html %}
+{% include /meta/favicon.html %}
+
+{% include /css/main.html %}
+
+{% include /scripts/ad-libraries.html %}
+
+</head>
+<body>
+<div class="content-wrapper">
+  <!--/.navbar -->
+  <div class="rev_slider_wrapper fullwidth-container">
+    <div id="slider-medium" class="rev_slider lightblue-1-grad" data-version="5.4.1">
+      <ul>
+        <li data-transition="fade" data-nav-color="light"><img src="/assets/images/dummy.png" data-bgcolor="" alt="" />
+
+              <div class="tp-caption w-regular color-white text-center"
+    	        data-x="center"
+        			data-y="middle"
+        			data-voffset="['-70','-70','-80','-70']"
+        			data-fontsize="['50','50','50','36']"
+        			data-lineheight="['60','60','60','46']"
+        			data-width="['1100','980','700','450']"
+        			data-textAlign="['center','center','center','center']"
+        			data-whitespace="['normal','normal','normal','normal']"
+        			data-frames='[{"from":"x:-50px;opacity:0;","speed":200,"to":"o:1;","delay":200,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+        			data-responsive="on"
+        			data-responsive_offset="on"
+        			style="z-index: 9;">Post</div>
+              <div class="tp-caption w-light color-white text-center"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['0','0','0','0']"
+              data-fontsize="['28','28','28','22']"
+              data-lineheight="['38','38','38','32']"
+              data-width="['750','750','650','450']"
+              data-textAlign="['center','center','center','center']"
+              data-whitespace="['normal','normal','normal','normal']"
+              data-frames='[{"from":"x:50px;opacity:0;","speed":400,"to":"o:1;","delay":400,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;">{{ page.title }}</div></li>
+
+            </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+    <!-- /.rev_slider -->
+  </div>
+  <!-- /.rev_slider_wrapper -->
+
+
+  <div class="content-wrapper">
+
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="blog classic-view boxed single">
+              <div class="box box-bg bg-white">
+                <div class="post">
+
+                  {% assign author = site.authors | where: 'title', page.author | first %}
+
+                  <figure><img src="{{site.url}}/blog/posts/{{ page.post_id }}/header.jpg" alt="" /></figure>
+                  <span class="category"><a href="#" class="label bg-red">Post</a></span>
+                  <div class="post-content">
+                    <h1 class="post-title">{{ page.title }}</h1>
+                    <div class="meta"><span class="date">{{ page.date | date_to_string }}</span><span class="author">By <a href="{{site.url}}{{ author.url }}">{{ author.title }}</a></span></div>
+
+                    {{ content }}
+
+                    <!-- /.tiles -->
+                    <div class="clearfix"></div>
+                    <a href="#" class="btn btn-rounded btn-icon btn-icon-left share-facebook goodshare" data-type="fb"><i class="et-facebook"></i>Share on Facebook</a> <a href="#" class="btn btn-rounded  btn-icon btn-icon-left share-twitter goodshare" data-type="tw"><i class="et-twitter"></i>Share on Twitter</a> <a href="#" class="btn btn-rounded  btn-icon btn-icon-left share-pinterest goodshare" data-type="pt"><i class="et-pinterest"></i>Share on Pinterest</a> </div>
+                  <!-- /.post-content -->
+
+                </div>
+              <!-- /.post -->
+
+              <hr />
+              <div class="post-nav-wrapper">
+                {% if page.previous.url %}
+                <div class="post-nav prev">
+                  <div class="meta"><i class="et-chevron-small-left"></i> Previous Article</div>
+                  <h4><a href="{{page.previous.url}}">{{page.previous.title}}</a></h4>
+                </div>
+                {% endif %}
+                {% if page.next.url %}
+                <div class="post-nav next">
+                  <div class="meta">Next Article <i class="et-chevron-small-right"></i></div>
+                  <h4><a href="{{page.next.url}}">{{page.next.title}}</a></h4>
+                </div>
+                {% endif %}
+              </div>
+              <!-- /.post-nav -->
+
+            </div>
+          </div>
+
+          </div>
+          <!--/column -->
+
+
+
+
+          <!-- /column .sidebar -->
+        </div>
+
+        <!-- FOOTER ADS -->
+        {% include /adunits/ads-footer.html %}
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.light-wrapper -->
+
+  </div>
+
+  {% include /scripts/main.html %}
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include /meta/main.html %}
+{% include /meta/og.html %}
+{% include /meta/favicon.html %}
+{% include /meta/verification.html %}
+
+{% include /css/main.html %}
+{% include /scripts/internet-explorer.html %}
+
+{% include /scripts/ad-libraries.html %}
+
+</head>
+<body>
+<div class="content-wrapper">
+  {% include /elements/nav.html %}
+  <!--/.navbar -->
+  <div class="rev_slider_wrapper fullwidth-container">
+    <div id="slider-medium" class="rev_slider lightblue-1-grad" data-version="5.4.1">
+      <ul>
+        <li data-transition="fade" data-nav-color="light"><img src="/assets/images/dummy.png" data-bgcolor="" alt="" />
+
+              <div class="tp-caption w-regular color-white text-center"
+    	        data-x="center"
+        			data-y="middle"
+        			data-voffset="['-70','-70','-80','-70']"
+        			data-fontsize="['50','50','50','36']"
+        			data-lineheight="['60','60','60','46']"
+        			data-width="['1100','980','700','450']"
+        			data-textAlign="['center','center','center','center']"
+        			data-whitespace="['normal','normal','normal','normal']"
+        			data-frames='[{"from":"x:-50px;opacity:0;","speed":200,"to":"o:1;","delay":200,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+        			data-responsive="on"
+        			data-responsive_offset="on"
+        			style="z-index: 9;">{{ page.title }}</div>
+              <div class="tp-caption w-light color-white text-center"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['0','0','0','0']"
+              data-fontsize="['28','28','28','22']"
+              data-lineheight="['38','38','38','32']"
+              data-width="['750','750','650','450']"
+              data-textAlign="['center','center','center','center']"
+              data-whitespace="['normal','normal','normal','normal']"
+              data-frames='[{"from":"x:50px;opacity:0;","speed":400,"to":"o:1;","delay":400,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;">{{ page.position }}</div></li>
+
+            </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+    <!-- /.rev_slider -->
+  </div>
+  <!-- /.rev_slider_wrapper -->
+
+
+  <div class="content-wrapper">
+
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="blog classic-view boxed single">
+              <div class="box box-bg bg-white">
+                <div class="post">
+
+                  <figure><img src="{{site.url}}/blog/authors/{{ page.author_id }}/header.jpg" alt="{{ page.title }}" /></figure>
+                  <span class="category"><a href="#" class="label bg-red">Team</a></span>
+                  <div class="post-content">
+                    <h1 class="post-title">{{ page.title }}</h1>
+                    <div class="meta"><span class="date">{{ page.joined }}</span></div>
+
+                    {{ content }}
+
+                    <!-- /.tiles -->
+                    <div class="clearfix"></div>
+                    <a href="#" class="btn btn-rounded btn-icon btn-icon-left share-facebook goodshare" data-type="fb"><i class="et-facebook"></i>Share on Facebook</a> <a href="#" class="btn btn-rounded  btn-icon btn-icon-left share-twitter goodshare" data-type="tw"><i class="et-twitter"></i>Share on Twitter</a> <a href="#" class="btn btn-rounded  btn-icon btn-icon-left share-pinterest goodshare" data-type="pt"><i class="et-pinterest"></i>Share on Pinterest</a> </div>
+                  <!-- /.post-content -->
+
+                </div>
+              <!-- /.post -->
+
+            </div>
+          </div>
+
+          </div>
+          <!--/column -->
+
+
+          {% include /modules/sidebar-blog.html %}
+
+
+          <!-- /column .sidebar -->
+        </div>
+
+        <!-- FOOTER ADS -->
+        {% include /adunits/ads-footer.html %}
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.light-wrapper -->
+
+  </div>
+
+  {% include /elements/breadcrumbs.html %}
+
+  {% include /elements/foot.html %}
+
+  {% include /elements/sitelinks.html %}
+  {% include /scripts/main.html %}
+
+  {% include /scripts/firebase.html %}
+  {% include /scripts/tracking.html %}
+</body>
+</html>

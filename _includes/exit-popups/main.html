@@ -1,0 +1,40 @@
+{% if page.exit-popup.enabled == true %}
+<script>
+/* Initialize DD Exit Pop Up Script:*/
+jQuery(function(){
+	ddexitpop.init({
+		contentsource: ['id', 'exit-popup-main'],
+		fxclass: 'random',
+		displayfreq: 'always',
+		onddexitpop: function($popup){
+			$('#exit-popup-main').modal('show');
+			console.log('Exit Pop Animation Class Name: ' + ddexitpop.settings.fxclass)
+		}
+	})
+})
+</script>
+
+  <div class="ddexitpop modal fade" id="exit-popup-main" tabindex="-1" role="dialog" aria-labelledby="exit-popup-main">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content bg-white">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">{{ page.exit-popup.title }}</h4>
+        </div>
+        <div class="modal-body">
+          
+          <p>{{ page.exit-popup.message }}</p>
+        </div>
+        <div class="modal-footer"> 
+	    {% if page.exit-popup.button-behavior == "modal" %}
+	    <button href="#" class="btn btn-rounded btn-green" role="button" data-dismiss="modal" data-toggle="modal" data-target="#{{ page.exit-popup.button-value }}">{{ page.exit-popup.button }}</button>
+	    {% endif %}
+	    {% if page.exit-popup.button-behavior == "link" %}
+	    <a href="{{ page.exit-popup.button-value }}" type="button" class="btn btn-default" data-dismiss="modal" onclick="window.location.href = '{{ page.exit-popup.button-value }}'">{{ page.exit-popup.button }}</a>
+	    {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+

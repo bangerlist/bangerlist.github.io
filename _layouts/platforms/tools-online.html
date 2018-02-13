@@ -1,0 +1,228 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include /meta/main.html %}
+{% include /meta/og.html %}
+{% include /meta/favicon.html %}
+{% include /meta/verification.html %}
+
+{% include /css/main.html %}
+{% include /scripts/internet-explorer.html %}
+
+{% include /scripts/ad-libraries.html %}
+
+</head>
+<body>
+<div class="content-wrapper">
+  {% include /elements/nav.html %}
+  <!--/.navbar -->
+  <div class="rev_slider_wrapper fullwidth-container">
+    <div id="slider-medium" class="rev_slider {{page.bgcolor}}" data-version="5.4.1">
+      <ul>
+        <li data-transition="fade" data-nav-color="light"><img src="/assets/images/dummy.png" data-bgcolor="" alt="" />
+
+              <div class="tp-caption w-regular color-white text-center"
+    	        data-x="center"
+        			data-y="middle"
+        			data-voffset="['-70','-70','-80','-70']"
+        			data-fontsize="['50','50','50','36']"
+        			data-lineheight="['60','60','60','46']"
+        			data-width="['1100','980','700','450']"
+        			data-textAlign="['center','center','center','center']"
+        			data-whitespace="['normal','normal','normal','normal']"
+        			data-frames='[{"from":"x:-50px;opacity:0;","speed":200,"to":"o:1;","delay":200,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+        			data-responsive="on"
+        			data-responsive_offset="on"
+        			style="z-index: 9;">{{ page.main-title }}</div>
+              <div class="tp-caption w-light color-white text-center"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['0','0','0','0']"
+              data-fontsize="['28','28','28','22']"
+              data-lineheight="['38','38','38','32']"
+              data-width="['750','750','650','450']"
+              data-textAlign="['center','center','center','center']"
+              data-whitespace="['normal','normal','normal','normal']"
+              data-frames='[{"from":"x:50px;opacity:0;","speed":400,"to":"o:1;","delay":400,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;">{{ page.main-subtitle }}</div>
+              <a class="tp-caption btn btn-border btn-rounded btn-l btn-white"
+              data-x="center"
+              data-y="middle"
+              data-voffset="['75','75','95','95']"
+              data-width="['auto','auto','auto','auto']"
+              data-textAlign="['center','center','center','center']"
+              data-frames='[{"delay":600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+              data-responsive="on"
+              data-responsive_offset="on"
+              style="z-index: 9;" href="{{site.url}}/download{{site.trailing}}">Get Somiibo</a> </li>
+
+            </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+    <!-- /.rev_slider -->
+  </div>
+  <!-- /.rev_slider_wrapper -->
+
+
+  <section id="about">
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">{{ page.tool-box.title }}</h2>
+        <p class="lead text-center">{{ page.tool-box.subtitle }}</p>
+        <div class="space30"></div>
+        <div class="row">
+          {{ page.tool-box.tool }}
+        </div>
+        <!-- /.row -->
+
+        <div class="space70"></div>
+
+        <!--/.row -->
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.light-wrapper -->
+
+  </section>
+
+
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-sm-12">
+            {% include /adunits/inner-adsense-platform-1.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="inverse-text {{page.bgcolor}}">
+    <div class="container inner pt-150 pb-150">
+      <h1 class="heading text-center">{{ page.driving-message.title }}</h1>
+      <h2 class="section-title text-center mb-0">{{ page.driving-message.subtitle }}</h2>
+    </div>
+    <!-- /.container -->
+  </div>
+
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h2 class="section-title text-center">{{ page.heading-1}}</h2>
+      <p class="lead text-center">{{ page.subheading-1}}</p>
+      <div class="space30"></div>
+      <div class="blog start grid-view">
+        <div class="tiles">
+          <div class="isotope row text-center">
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-1-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-1-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-1-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-2-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-2-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-2-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-3-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-3-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-3-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+          </div>
+          <div class="isotope row text-center">
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-4-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-4-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-4-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-5-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-5-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-5-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+
+            <div class="item grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="box box-bg bg-white mb-0"> <span class="icon icon-m text-gradient mb-20"><i class="{{ page.heading-boxes.box-6-img}}"></i></span>
+                <h5>{{ page.heading-boxes.box-6-title}}</h5>
+                <p class="mb-0">{{ page.heading-boxes.box-6-desc}}</p>
+              </div>
+              <!--/.box -->
+            </div>
+          </div>
+            <!--/column -->
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!--/.tiles -->
+      </div>
+      <!-- /.grid-view -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-sm-12">
+          {% include /adunits/inner-adsense-platform-2.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper gray-wrapper">
+    <div class="container inner">
+      <div class="text-center">
+        <p class="lead">{{ page.call-to-action.text }}</p>
+        <a href="{{ site.url }}/download{{ site.trailing }}" class="btn btn-rounded mb-0">Get Somiibo</a> </div>
+      <!-- /.text-center -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+
+  <!-- /#about -->
+
+
+  {% include /modules/latest-blog.html %}
+
+
+  {% include /elements/breadcrumbs.html %}
+</div>
+
+  {% include /elements/foot.html %}
+
+  {% include /elements/sitelinks.html %}
+  {% include /scripts/main.html %}
+
+  {% include /scripts/firebase.html %}
+  {% include /scripts/tracking.html %}
+</body>
+</html>

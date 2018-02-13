@@ -1,0 +1,26 @@
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="somiibo" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:description" content="{{ page.description }}" />
+{% if page.layout == 'post' %}
+<meta name="twitter:image" content="https://somiibo.com/blog/posts/{{ page.post_id }}/teaser.jpg" />
+{% elsif page.og.image != null %}
+<meta name="twitter:image" content="https://somiibo.com/assets/images/og{{ page.og.image }}" />
+{% else %}
+<meta name="twitter:image" content="https://somiibo.com/assets/images/og/somiibo-social-media-bot-logo-og.png" />
+{% endif %}
+
+<!-- Social: Facebook / Open Graph -->
+<meta property="og:url" content="https://somiibo.com/{{ page.url }}" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+{% if page.layout == 'post' %}
+<meta property="og:image" content="https://somiibo.com/blog/posts/{{ page.post_id }}/teaser.jpg" />
+{% elsif page.og.image != null %}
+<meta property="og:image" content="https://somiibo.com/assets/images/og{{ page.og.image }}" />
+{% else %}
+<meta property="og:image" content="https://somiibo.com/assets/images/og/somiibo-social-media-bot-logo-og.png" />
+{% endif %}

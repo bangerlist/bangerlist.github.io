@@ -1,0 +1,99 @@
+# Site
+title:              Social Media Bot
+bio:                'Social Media Bot'
+description:        "Social Media Bot and Automation for SoundCloud, Twitter, Instagram, YouLikeHits, AddMeFast, and more"
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/somiibo-logo-app.png'
+background:         'assets/img/gradient-green-1.png'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_US
+url:                https://somiibo.com
+# url:                "http://127.0.0.1:4000"
+trailing: "/"
+enforce_ssl: somiibo.com   # without any protocol
+enforce_ssl: www.somiibo.com   # without any protocol
+
+# download_mac: http://bit.ly/somiibo-mac-0-1-0
+# download_win: http://bit.ly/somiibo-win-0-1-0
+
+# download_mac: "https://github.com/iwiedenm/somiibo-production/releases/download/installer/Somiibo.Mac.Installer.zip"
+# download_win: "https://github.com/iwiedenm/somiibo-production/releases/download/installer/Somiibo.Win.Installer.zip"
+
+download_win: "http://bit.ly/somiibo-win"
+download_mac: "http://bit.ly/somiibo-mac"
+download_win_x86: "http://bit.ly/somiibo-win-x86"
+download_win_unpacked: "http://bit.ly/somiibo-win-unpacked"
+download_win_unpacked_x86: "http://bit.ly/somiibo-win-unpacked-x86"
+
+default-lastmod: "2017-01-30T00:20:35+00:00"
+
+includes:
+- assets
+
+collections:
+  authors:
+    title: Authors
+    output: true
+
+defaults:
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/team/:title/"
+    layout: author
+    twitter:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
+
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+disqus_shortname:   somiibo
+
+# Social
+compress_html:
+  clippings: [all]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old, xyz, building]
